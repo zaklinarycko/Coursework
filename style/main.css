@@ -1,0 +1,44 @@
+body {
+    min-width: 630px;
+}
+
+
+
+#container {
+    padding-left: 200px;
+    padding-right: 190px;
+}
+
+#container .column {
+    position: relative;
+    float: left;
+}
+
+#center {
+    padding: 10px 20px;
+    width: 100%;
+}
+
+#left {
+    width: 200px;
+    padding: 0 10px;
+    right: 200px;
+    margin-left: -100%;
+
+}
+
+#right {
+    width: 150px;
+    padding: 0 10px;
+    margin-right: -150px;
+}
+
+#footer {
+    clear: both;
+}
+
+/*** IE Fix ***/
+
+* html #left {
+    left: 150px;
+}
