@@ -3,7 +3,7 @@ body {
     padding-left: 200px;
     padding-right: 190px;
     min-width: 240px;
-    
+    background-color: rgba(39, 45, 44, 0.98);
 }
 
 #header {
@@ -54,7 +54,10 @@ li a {
     padding-right: 30px;
     padding-left: 30px;
     padding-bottom: 30px;
-    text-decoration: dotted;
+    text-decoration: none;
+    font-size: large;
+    font-style: normal;
+    font-family: "Marker Felt";
 }
 
 li a:hover {
@@ -98,7 +101,7 @@ border-bottom: none;
     left: 150px;
 }
 
-body { background: #FFF;}
+
 
 #center { background: #DDD;}
 #right { background: #F66;}
