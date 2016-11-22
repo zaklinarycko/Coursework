@@ -1,35 +1,91 @@
 body {
-    min-width: 630px;
+    margin: 0;
+    padding-left: 200px;
+    padding-right: 190px;
+    min-width: 240px;
+    
 }
 
+#header {
+}
 
 #container {
     padding-left: 200px;
     padding-right: 190px;
 }
 
-#container .column {
+.column {
     position: relative;
     float: left;
+    top: auto;
 }
 
 #center {
-    padding: 10px 20px;
+    padding: 0px 20px;
     width: 100%;
 }
 
-#left {
+/*nav*/
+
+ul {
     width: 200px;
-    padding: 0 10px;
-    right: 200px;
-    margin-left: -100%;
+    height: 100%;
+    top: auto;
+    list-style-type: none;
+    padding-top: 0;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0;
+    background-color: black;
+    position: fixed;
+    overflow: auto;
+    right: auto;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+}
+
+
+li a {
+    display: block;
+    color: white;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    text-decoration: dotted;
+}
+
+li a:hover {
+    background-color: crimson;
+    color: white;
 
 }
 
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li { text-align: center  }
+li :last-child {
+border-bottom: none;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
 #right {
-    width: 150px;
+    width: 130px;
     padding: 0 10px;
-    margin-right: -150px;
+    margin-right: -100%;
+    top: auto;
 }
 
 #footer {
@@ -41,3 +97,9 @@ body {
 * html #left {
     left: 150px;
 }
+
+body { background: #FFF;}
+
+#center { background: #DDD;}
+#right { background: #F66;}
+
