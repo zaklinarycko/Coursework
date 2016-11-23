@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding-left: 100px;
+    min-width: 240px;
+    background-color: rgba(39, 45, 44, 0.98);
+}
+
+#container {
+    padding-left: 200px;
+    padding-right: 190px;
+}
+
+.column {
+    position: relative;
+    float: left;
+    top: auto;
+    background-color: aqua;
+    height: 100%;
+}
+
+#center {
+    padding: 0 20px;
+    width: 100%;
+}
+
+/*nav*/
+
+ul {
+
+    width: 200px;
+    height: 100%;
+    top: auto;
+    list-style-type: none;
+    padding-top: 100px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    background-color: rgba(28, 28, 28, 0.98);
+    position: fixed;
+    overflow: auto;
+    right: auto;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+}
+
+
+li a {
+    display: block;
+    color: white;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-left: 100px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-size: large;
+    font-style: normal;
+    font-family: "Marker Felt", serif;
+}
+
+li a:hover {
+    background-color: crimson;
+    color: white;
+
+}
+
+.active {
+    background-color: #4CAF50;
+    color: floralwhite;
+}
+
+li { text-align: center  }
+li :last-child {
+border-bottom: none;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+#footer {
+    clear: both;
+    background-color: aqua;
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height:11px;   /* Height of the footer */
+    background-color: #1c1c1c;
+    color: darkgray;
+    font-family: "Marker Felt", serif;
+    font-size: 10px;
+
+}
+
+/*** IE Fix ***/
+
+* html #left {
+    left: 150px;
+}
