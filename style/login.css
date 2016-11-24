@@ -1,0 +1,57 @@
+/* Bordered form */
+form {
+    border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    padding: 12px 1px;
+    margin: 8px 8px;
+    display: list-item;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: "Marker Felt", serif;
+    color: dimgray;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: crimson;
+    color: floralwhite;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    font-family: "Marker Felt", serif;
+}
+
+/* Extra style for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: crimson;
+    font-family: "Marker Felt", serif;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    padding-top: 16px;
+    color: floralwhite;
+    font-family: "Marker Felt", serif;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}

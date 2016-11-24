@@ -7,11 +7,11 @@ body {
 
 #container {
     padding-left: 200px;
-    padding-right: 190px;
+    padding-right: 200px;
 }
 
 .column {
-    position: relative;
+    position: fixed;
     float: left;
     top: auto;
     background-color: aqua;
