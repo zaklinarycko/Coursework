@@ -2,8 +2,8 @@
 
 $db=mysqli(
     "br-cdbr-azure-south-b.cloudapp.net",
-    "b85ab62c621ad",
-    "b725147c",
+    "bc852cafdb9783",
+    "187e9998",
     "coursework"
     );
 
