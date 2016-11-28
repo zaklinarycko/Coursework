@@ -10,3 +10,4 @@ $db= new mysqli(
 if (!$db) {
     die('Connect Error: ' . mysqli_connect_errno());
 }
+
