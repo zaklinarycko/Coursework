@@ -11,7 +11,7 @@
 
 <div id="left" class="column">
     <ul>
-        <img src="header.jpg" alt="Main Image" style="width:200px;height:200px;">
+        <img src="header.jpg" alt="Main Image" style="width:200px;height:250px;">
         <li><a href="welcome.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="clubs.html">Clubs</a></li>
