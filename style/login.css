@@ -45,7 +45,7 @@ span.psw {
     font-family: "Marker Felt", serif;
 }
 
-/* Change styles for span and cancel button on extra small screens - leave alone */
+/* Change styles for span and cancel button on extra small screens - leave alone DO not touch */
 @media screen and (max-width: 300px) {
     span.psw {
         display: block;
