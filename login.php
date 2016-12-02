@@ -11,7 +11,7 @@
 <?
 //Opens up a session
 session_start();
-include ("db_connect.php");
+include ("dbconnect.php");
 //Check to see if the 'username' session variable is set.
 if (isset($_SESSION['username'])) //SESSION DOES EXIST
 {
@@ -36,7 +36,6 @@ else //SESSION DOESNT EXIST
         <p><input type="password" name="password" value="" placeholder="Password"></p>
         <p class="submit"><input type="submit" name="commit" value="Login"></p>
     </form>
-    <a href="signup.php">Signup</a>
 
     <?
 }
