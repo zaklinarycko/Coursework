@@ -11,7 +11,7 @@ $password = $_POST["password"];
 //$password = mysqli_real_escape_string($password);
 
 //FIND THE USER IN THE DATABASE
-$sql="SELECT * FROM users WHERE username='". $username ."' and password='". $password . "'";
+$sql="SELECT * FROM users WHERE Username='". $username ."' and Password='". $password . "'";
 
 
 //RUN
@@ -27,10 +27,10 @@ $result = $db->query($sql);
 
     if($loginSuccessful==1){
 
-        // Register $myusername, $mypassword and redirect to file "index.php"
+        // Register $myusername, $mypassword and redirect to file "welcome.php"
     session_start();
-    $_SESSION['username'] = $username;
-    header("location:index.php");
+    $_SESSION['Username'] = $username;
+    header("location:welcome.php");
     }
         else {
             echo "Wrong Username or Password";
