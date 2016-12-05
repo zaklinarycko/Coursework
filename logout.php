@@ -5,5 +5,5 @@
         unset($_SESSION['username']);
     }
 
-    header("location:index.pp");
+    header("location:index.php");
 ?>
