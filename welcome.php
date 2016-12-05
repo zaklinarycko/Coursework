@@ -15,7 +15,7 @@
         <li><a href="about.html">About</a></li>
         <li><a href="clubs.html">Clubs</a></li>
         <li><a href="news.html">News</a></li>
-        <li><a href="login.php">Log In/ Log Out</a></li>
+        <li><a href="login.php">Log In/ Log Out.</a></li>
 
     </ul>
 </div>
