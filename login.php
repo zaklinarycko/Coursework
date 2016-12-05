@@ -61,35 +61,6 @@ else //SESSION DOESNT EXIST
 
     <div id="center" class="column">
 
-<<<<<<< Updated upstream
-=======
-            if (isset($_SESSION['username']))
-            {
-                echo "<p>Hello" . $_SESSION['username'] . "</p>";
-                $sql = "SELECT * FROM users WHERE Username='". $_SESSION['Username'] . "'";
-                $result = $db->query($sql);
-                while($row = $result->fetch_array())
-                {
-                    echo "<p>User type is " . $row['userType']."</p>";
-                }
-                ?>
-                <a href=""logout.php">Logout</a>
-            <?
-            }
-            else //SESSION DOESNT EXIST
-            {
-                ?>
-                <h1>My Login Form</h1>
-                <form method="post" action="checklogin.php">
-                    <p><input type="text" name="username" value="" placeholder="Username or Email"></p>
-                    <p><input type="password" name="password" value="" placeholder="Password"></p>
-                    <p class=""submit"><input type="submit" name="commit" value="Login"></p>
-                </form>
-               <?
-            }
-            ?>
->>>>>>> Stashed changes
-
     </div>
 
     <div id="footer"> Page designed and created by Zaklina Rycko,Cara Henderson, Sarah Thomson, Sarah Valentine and Lucy Axford</div>
