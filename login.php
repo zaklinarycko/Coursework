@@ -43,13 +43,9 @@ else //SESSION DOESNT EXIST
 
 <div id="left" class="column">
     <ul>
-<<<<<<< Updated upstream
+
         <img src="header.jpg" alt="Main Image" style="width:200px;height:250px;">
-        <li><a href="welcome.html">Home</a></li>
-=======
-        <img src="header.jpg" alt="Main Image" style="width:200px;height:200px;">
         <li><a href="welcome.php">Home</a></li>
->>>>>>> Stashed changes
         <li><a href="about.html">About</a></li>
         <li><a href="clubs.html">Clubs</a></li>
         <li><a href="news.html">News</a></li>
