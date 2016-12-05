@@ -11,9 +11,9 @@
     <ul>
         <img src="header.jpg" alt="Main Image" style="width:200px;height:200px;">
         <li><a href="welcome.php">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="clubs.html">Clubs</a></li>
-        <li><a href="news.html">News</a></li>
+        <li><a href="about.php">About</a></li>
+        <li><a href="clubs.php">Clubs</a></li>
+        <li><a href="news.php">News</a></li>
         <li><a href="login.php">Log In/ Log Out</a></li>
 
 
