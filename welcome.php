@@ -21,7 +21,7 @@
 </div>
 <div id="container">
     <div id="center" class="column">
-        <img src="header.jpg" alt="Main Image.">
+        <img src="header.jpg" alt="Main Image">
     </div>
 
     <div id="footer"> Page designed and created by Zaklina Rycko,Cara Henderson, Sarah Thomson, Sarah Valentine and Lucy Axford</div>
