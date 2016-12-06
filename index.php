@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<img src="header.jpg" alt="Main Image" style="width:100%;height:100%;">
+<img src="header.jpg" alt="Main Image." style="width:100%;height:100%;">
 
 <form>
     <input class="MyButton" type="button" value="Welcome."
