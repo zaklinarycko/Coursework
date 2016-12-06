@@ -11,7 +11,7 @@
 
 <form>
     <input class="MyButton" type="button" value="Welcome."
-           onclick="window.location.href='welcome.php'"/>
+           onclick="window.location.href='main.php'"/>
 </form>
 
 
