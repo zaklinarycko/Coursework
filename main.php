@@ -7,6 +7,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="stylesheet" href="style/main.css"/>
+    <link rel="stylesheet" href="style/main.min.css"/>
+
 
 </head>
 
@@ -58,7 +60,7 @@
         <div class="intro-text">
             <div class="intro-lead-in">Welcome To Sportlethen!</div>
             <div class="intro-heading">It's Nice To Meet You</div>
-            <a href="#about" class="page-scroll btn btn-xl">Tell Me More</a>
+            <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
         </div>
     </div>
 </header>
