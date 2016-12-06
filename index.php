@@ -7,8 +7,6 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="stylesheet" href="style/main.css"/>
-    <link rel="stylesheet" href="style/main.min.css"/>
-
 
 </head>
 
@@ -60,7 +58,7 @@
         <div class="intro-text">
             <div class="intro-lead-in">Welcome To Sportlethen!</div>
             <div class="intro-heading">It's Nice To Meet You</div>
-            <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
+            <a href="index.php" class="page-scroll btn btn-xl">Tell Me More</a>
         </div>
     </div>
 </header>
@@ -71,7 +69,7 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">About</h2>
-                <h3 class="section-subheading text-muted">We are an association of local and progressive sports clubs who are working together
+                <h3 class="text-muted">We are an association of local and progressive sports clubs who are working together
                     to develop safe and fun sport & fitness activities in the Portlethen area.
                 </h3>
             </div>
@@ -230,23 +228,12 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <span class="copyright">Copyright &copy; Your Website 2016</span>
+                <span class="copyright">Copyright &copy; Created by Zaklina Rycko, Cara Henderson, Sarah Thomson, Sarah Valentine and Lucy Axford</span>
             </div>
             <div class="col-md-4">
                 <ul class="list-inline social-buttons">
-                    <li><a href="#"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li><a href="#"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <ul class="list-inline quicklinks">
-                    <li><a href="#">Privacy Policy</a>
-                    </li>
-                    <li><a href="#">Terms of Use</a>
+
+                    <li><a href="https://www.facebook.com/Sportlethen/?hc_ref=SEARCH&fref=nf"><i class="fa fa-facebook"></i></a>
                     </li>
                 </ul>
             </div>
