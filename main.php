@@ -22,7 +22,6 @@
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -41,7 +40,7 @@
                     <a class="page-scroll" href="#news">News</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#login">Log in/Log out</a>
+                    <a class="page-scroll" href="#login/logout">Log In/Log out</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#contact">Contact</a>
@@ -59,13 +58,13 @@
         <div class="intro-text">
             <div class="intro-lead-in">Welcome To Sportlethen!</div>
             <div class="intro-heading">It's Nice To Meet You</div>
-            <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
+            <a href="#about" class="page-scroll btn btn-xl">Tell Me More</a>
         </div>
     </div>
 </header>
 
 <!-- About Section -->
-<section id="services">
+<section id="about">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -103,7 +102,7 @@
 </section>
 
 <!--  Clubs Section -->
-<section id="portfolio" class="bg-light-gray">
+<section id="clubs" class="bg-light-gray">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -201,7 +200,7 @@
 </section>
 
 <!-- News Section -->
-<section id="about">
+<section id="news">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -282,7 +281,7 @@
 </section>
 
 <!-- Log in/Log out Section -->
-<section id="team" class="bg-light-gray">
+<section id="login/logout" class="bg-light-gray">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
