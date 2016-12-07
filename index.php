@@ -122,21 +122,6 @@
         <div class="row">
             <div class="clubs">
 
-                <?
-                include("dbconnect.php");
-                $sql_query = "SELECT * FROM clubs";
-                $results = $db->query($sql_query);
-                while($row = $result->fetch_array())
-                {
-                    $ClubName = $row['ClubName'];
-                    $Description = $row['Description'];
-                    echo "
-                    <h1>{$ClubName}</h1>
-                    <p>{$Description}</p>
-                    ";
-                }
-                ?>
-
             </div>
         </div>
     </div>
