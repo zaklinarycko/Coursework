@@ -130,11 +130,14 @@
             error_reporting(E_ALL);
 
             include("dbconnect.php");
-            $ClubID = $_GET[ClubID];
 
-            $sql_query = "SELECT * FROM clubs WHERE ClubID = ClubID ";
+            $ClubID = $_GET['ClubID'];
+            if (isset($_SESSION['ClubID'])) //SESSION DOES EXIST
+            $sql_query = "SELECT * FROM clubs WHERE ClubID = 1 ";
 
             {
+                $ClubName = ['ClubName'];
+                $Description = ['Description'];
 
                 echo "
                     <h1>{$ClubName}</h1>
