@@ -130,11 +130,12 @@
             error_reporting(E_ALL);
 
             include("dbconnect.php");
-            $sql_query = "SELECT * FROM clubs";
-            $results = $db->query($sql_query);
+            $ClubID = $_GET[ClubID];
+
+            $sql_query = "SELECT * FROM clubs WHERE ClubID = ClubID ";
+
             {
-                $ClubName = $row['ClubName'];
-                $Description = $row['Description'];
+
                 echo "
                     <h1>{$ClubName}</h1>
                     <p>{$Description}</p>
