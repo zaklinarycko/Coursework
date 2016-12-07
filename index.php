@@ -46,7 +46,7 @@
                     <a class="page-scroll" href="#news">News</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#login">Log In/Log out</a>
+                    <a class="page-scroll" href="#login">Log In/ Log out</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#contact">Contact</a>

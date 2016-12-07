@@ -246,7 +246,7 @@ header {
     background-size: cover;
     -o-background-size: cover;
     text-align: center;
-    color: white;
+    color: dimgray;
 }
 header .intro-text {
     padding-top: 100px;
