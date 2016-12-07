@@ -117,6 +117,11 @@
                 <h2 class="section-heading">Clubs</h2>
                 <h3 class="section-subheading text-muted">Here you can view all the clubs available in the area.</h3>
 
+            </div>
+        </div>
+        <div class="row">
+            <div class="clubs">
+
                 <?
                 include("dbconnect.php");
                 $sql_query = "SELECT * FROM clubs";
@@ -131,11 +136,6 @@
                     ";
                 }
                 ?>
-
-            </div>
-        </div>
-        <div class="row">
-            <div class="clubs">
 
             </div>
         </div>
