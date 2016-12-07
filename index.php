@@ -135,15 +135,6 @@
             if (isset($_SESSION['ClubID'])) //SESSION DOES EXIST
             $sql_query = "SELECT * FROM clubs WHERE ClubID = 1 ";
 
-            {
-                $ClubName = ['ClubName'];
-                $Description = ['Description'];
-
-                echo "
-                    <h1>{$ClubName}</h1>
-                    <p>{$Description}</p>
-                    ";
-            }
             ?>
 
             <div class="clubs">
