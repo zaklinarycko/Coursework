@@ -116,10 +116,15 @@
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Clubs</h2>
                 <h3 class="section-subheading text-muted">Here you can view all the clubs available in the area.</h3>
+
+                clubs.php?ClubsID=3;
+
                 <?
                 include("dbconnect.php");
                 $clubID = $_GET['ClubID'];
-                $sql = "SELECT * FROM clubs WHERE clubID = $ClubID";
+                $sql_query = "SELECT * FROM clubs WHERE clubID = $1";
+                $results = $db->query($_query);
+                while($row = $result->fetch_array());
                 {
                     echo "
                     <h1>{$ClubName}</h1>
@@ -127,6 +132,7 @@
                     ";
                 }
                 ?>
+
             </div>
         </div>
         <div class="row">
