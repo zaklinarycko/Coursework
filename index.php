@@ -122,7 +122,7 @@
                 <?
                 include("dbconnect.php");
                 $clubID = $_GET['ClubID'];
-                $sql_query = "SELECT * FROM clubs WHERE clubID = $1";
+                $sql_query = "SELECT * FROM clubs WHERE clubID = $clubID";
                 $results = $db->query($_query);
                 while($row = $result->fetch_array());
                 {
