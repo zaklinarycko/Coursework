@@ -117,15 +117,14 @@
                 <h2 class="section-heading">Clubs</h2>
                 <h3 class="section-subheading text-muted">Here you can view all the clubs available in the area.</h3>
 
-                clubs.php?ClubsID=3;
-
                 <?
                 include("dbconnect.php");
-                $clubID = $_GET['ClubID'];
-                $sql_query = "SELECT * FROM clubs WHERE clubID = $clubID";
-                $results = $db->query($_query);
-                while($row = $result->fetch_array());
+                $sql_query = "SELECT * FROM clubs";
+                $results = $db->query($sql_query);
+                while($row = $result->fetch_array())
                 {
+                    $ClubName = $row['ClubName'];
+                    $Description = $row['Description'];
                     echo "
                     <h1>{$ClubName}</h1>
                     <p>{$Description}</p>
