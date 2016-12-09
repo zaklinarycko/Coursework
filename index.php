@@ -122,12 +122,43 @@
         <div class="row">
 
 
+            <?
 
+            //Opens up a session
+            session_start();
+
+            ini_set('display_errors', 1);
+            ini_set('display_startup_errors', 1);
+            error_reporting(E_ALL);
+
+            include("dbconnect.php");
+
+            if (!$db) {
+                die('Connect Error: ' . mysqli_connect_errno());
+            }
+
+            $ClubID = $_GET['ClubID'];
+            if (isset($_SESSION['ClubID'])) //SESSION DOES EXIST
+
+                $sql_query = "SELECT * FROM clubs";
+            $result = $db->query($sql_query);
+
+            echo "<p><strong> </strong>";
+            while($row = $result->fetch_array()){
+                // print out fields from row of data
+                echo $row['ClubName'] . " | ";
+            }
+            echo "</p>";
+
+
+            ?>
 
 
             <div class="clubs">
             </div>
 
+
+            //calender
             <div
                 <iframe src="https://calendar.google.com/calendar/embed?src=n53j6l0hgeii063i8pe6k0o1f8%40group.calendar.google.com&ctz=Europe/London" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
             </div>
