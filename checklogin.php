@@ -30,7 +30,7 @@ $result = $db->query($sql);
         // Register $myusername, $mypassword and redirect to file "welcome.php"
     session_start();
     $_SESSION['Username'] = $username;
-    header("location:welcome.php");
+    header("location:index.php");
     }
         else {
             echo "Wrong Username or Password";

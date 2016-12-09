@@ -6,17 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="stylesheet" href="style/main.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style/main.css"/>
+    <link rel="stylesheet" href="style/normalization.css"/>
+
 
 </head>
-
-<body>
 
 <body id="page-top" class="index">
 
 <!-- Navigation -->
 <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
     <div class="container">
+
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header page-scroll">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -40,7 +46,7 @@
                     <a class="page-scroll" href="#news">News</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#login/logout">Log In/Log out</a>
+                    <a class="page-scroll" href="#login">Log In/ Log out</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#contact">Contact</a>
@@ -55,10 +61,12 @@
 <!-- Header -->
 <header>
     <div class="container">
+
         <div class="intro-text">
             <div class="intro-lead-in">Welcome To Sportlethen!</div>
             <div class="intro-heading">It's Nice To Meet You</div>
             <a href="index.php" class="page-scroll btn btn-xl">Tell Me More</a>
+
         </div>
     </div>
 </header>
@@ -108,11 +116,43 @@
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Clubs</h2>
                 <h3 class="section-subheading text-muted">Here you can view all the clubs available in the area.</h3>
+
             </div>
         </div>
         <div class="row">
+
+            <?
+            //Opens up a session
+            session_start();
+
+            ini_set('display_errors', 1);
+            ini_set('display_startup_errors', 1);
+            error_reporting(E_ALL);
+
+            include ("dbconnect.php");
+            //Check to see if the 'username' session variable is set.
+            if (isset($_SESSION['ClubID'])) //SESSION DOES EXIST
+            {
+                echo "<p>Hello " . $_SESSION['ClubID'] . "</p>";
+                $sql = "SELECT * FROM clubs WHERE ClubID='". $_SESSION['ClubName'] . "'";
+                $result = $db->query($sql);
+                while($row = $result->fetch_array())
+                {
+                    echo "<p> " . $row['ClubName'] . "</p>";
+                }
+                ?>
+
+                <?
+            }
+            else //SESSION DOESNT EXIST
+            {
+            ?>
+
+
+
             <div class="clubs">
 
+            </div>
         </div>
     </div>
 </section>
@@ -123,14 +163,83 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">News</h2>
-                <h3 class="section-subheading text-muted">All the news in the area.</h3>
+                <h3 class="section-subheading text-muted">All the news happening in the area.</h3>
             </div>
         </div>
-       </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image">
+
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2009-2011</h4>
+                                <h4 class="subheading">Our Humble Beginnings</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>March 2011</h4>
+                                <h4 class="subheading">An Agency is Born</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>December 2012</h4>
+                                <h4 class="subheading">Transition to Full Service</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>July 2014</h4>
+                                <h4 class="subheading">Phase Two Expansion</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>Be Part
+                                <br>Of Our
+                                <br>Story!</h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </section>
 
 <!-- Log in/Log out Section -->
-<section id="login/logout" class="bg-light-gray">
+<section id="login" class="bg-light-gray">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -142,8 +251,6 @@
 
             <?
 
-            //Opens up a session
-            session_start();
             include ("dbconnect.php");
             //Check to see if the 'username' session variable is set.
             if (isset($_SESSION['Username'])) //SESSION DOES EXIST
@@ -156,18 +263,19 @@
                     echo "<p>User type is " . $row['Username'] . "</p>";
                 }
                 ?>
-                <a href="logout.php">Logout</a>
+                <button type="submit" class="btn btn-xl"> <a href="logout.php">Logout</a></button>
                 <?
             }
             else //SESSION DOESNT EXIST
             {
                 ?>
 
-                <h1>My Login Form</h1>
                 <form method="post" action="checklogin.php">
                     <p><input type="text" name="Username" value="" placeholder="Username or Email"></p>
                     <p><input type="password" name="Password" value="" placeholder="Password"></p>
-                    <p class="submit"><input type="submit" name="commit" value="Login"></p>
+                    <button type="submit" class="btn btn-xl">Log In</button>
+
+                    <input type="checkbox" checked="checked"> Remember me
                 </form>
 
                 <?
@@ -240,24 +348,6 @@
         </div>
     </div>
 </footer>
-
-
-<!-- jQuery -->
-<script src="vendor/jquery/jquery.min.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-<!-- Plugin JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-<!-- Contact Form JavaScript -->
-<script src="js/jqBootstrapValidation.js"></script>
-<script src="js/contact_me.js"></script>
-
-<!-- Theme JavaScript -->
-<script src="js/agency.min.js"></script>
-
 
 </body>
 </html>

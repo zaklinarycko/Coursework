@@ -12,7 +12,7 @@
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style/main.css"/>
-    <link rel="stylesheet" href="style/welcome.css"/>
+    <link rel="stylesheet" href="style/normalization.css"/>
 
 
 </head>
@@ -46,7 +46,7 @@
                     <a class="page-scroll" href="#news">News</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#login/logout">Log In/Log out</a>
+                    <a class="page-scroll" href="#login">Log In/Log out</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#contact">Contact</a>
@@ -61,10 +61,12 @@
 <!-- Header -->
 <header>
     <div class="container">
+
         <div class="intro-text">
             <div class="intro-lead-in">Welcome To Sportlethen!</div>
             <div class="intro-heading">It's Nice To Meet You</div>
             <a href="index.php" class="page-scroll btn btn-xl">Tell Me More</a>
+
         </div>
     </div>
 </header>
@@ -114,14 +116,30 @@
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Clubs</h2>
                 <h3 class="section-subheading text-muted">Here you can view all the clubs available in the area.</h3>
+
             </div>
         </div>
         <div class="row">
             <div class="clubs">
 
-            </div>
+                <?
+                include("dbconnect.php");
+                $sql_query = "SELECT * FROM clubs";
+                $results = $db->query($sql_query);
+                while($row = $result->fetch_array())
+                {
+                $ClubName = $row['ClubName'];
+                $Description = $row['Description'];
+                echo "
+                <h1>{$ClubName}</h1>
+                <p>{$Description}</p>
+                ";
+                }
+                ?>
+
             </div>
         </div>
+    </div>
 </section>
 
 <!-- News Section -->
@@ -130,14 +148,83 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">News</h2>
-                <h3 class="section-subheading text-muted">All the news in the area.</h3>
+                <h3 class="section-subheading text-muted">All the news happening in the area.</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image">
+
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2009-2011</h4>
+                                <h4 class="subheading">Our Humble Beginnings</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>March 2011</h4>
+                                <h4 class="subheading">An Agency is Born</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>December 2012</h4>
+                                <h4 class="subheading">Transition to Full Service</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>July 2014</h4>
+                                <h4 class="subheading">Phase Two Expansion</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>Be Part
+                                <br>Of Our
+                                <br>Story!</h4>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Log in/Log out Section -->
-<section id="login/logout" class="bg-light-gray">
+<section id="login" class="bg-light-gray">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -163,18 +250,19 @@
             echo "<p>User type is " . $row['Username'] . "</p>";
             }
             ?>
-            <a href="logout.php">Logout</a>
+            <button type="submit" class="btn btn-xl"> <a href="logout.php">Logout</a></button>
             <?
             }
             else //SESSION DOESNT EXIST
             {
                 ?>
 
-            <h1>My Login Form</h1>
             <form method="post" action="checklogin.php">
                 <p><input type="text" name="Username" value="" placeholder="Username or Email"></p>
                 <p><input type="password" name="Password" value="" placeholder="Password"></p>
-                <p class="submit"><input type="submit" name="commit" value="Login"></p>
+                <button type="submit" class="btn btn-xl">Log In</button>
+
+                <input type="checkbox" checked="checked"> Remember me
             </form>
 
             <?
