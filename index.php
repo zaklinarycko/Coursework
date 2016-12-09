@@ -138,14 +138,6 @@
             if (isset($_SESSION['ClubID'])) //SESSION DOES EXIST
             $sql_query = "SELECT * FROM clubs WHERE ClubID = ClubID ";
 
-            $result = $db->query($sql_query);
-
-            while($row = $result->fetch_array()){
-                // print out fields from row of data
-                echo $row['ClubName'] . " | ";
-                echo $row['Description'] . " | ";
-            }
-            echo "</p>"
 
             ?>
 
