@@ -122,36 +122,7 @@
         <div class="row">
 
 
-            <?
 
-            //Opens up a session
-            session_start();
-
-            ini_set('display_errors', 1);
-            ini_set('display_startup_errors', 1);
-            error_reporting(E_ALL);
-
-            include("dbconnect.php");
-
-            if (!$db) {
-                die('Connect Error: ' . mysqli_connect_errno());
-            }
-
-            $ClubID = $_GET['ClubID'];
-            if (isset($_SESSION['ClubID'])) //SESSION DOES EXIST
-
-                $sql_query = "SELECT * FROM clubs";
-            $result = $db->query($sql_query);
-
-            echo "<p><strong> </strong>";
-            while($row = $result->fetch_array()){
-                // print out fields from row of data
-                echo $row['ClubName'] . " | ";
-            }
-            echo "</p>";
-
-
-            ?>
 
 
             <div class="clubs">
