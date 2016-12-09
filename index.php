@@ -123,22 +123,7 @@
 
 
 
-            <?
 
-            //Opens up a session
-            session_start();
-
-            ini_set('display_errors', 1);
-            ini_set('display_startup_errors', 1);
-            error_reporting(E_ALL);
-
-            include("dbconnect.php");
-
-            $ClubID = $_GET['ClubID'];
-            if (isset($_SESSION['ClubID'])) //SESSION DOES EXIST
-            $sql_query = "SELECT * FROM clubs WHERE ClubID = 1 ";
-
-            ?>
 
             <div class="clubs">
 
