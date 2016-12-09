@@ -123,11 +123,13 @@
 
             <?
             //Opens up a session
+
             session_start();
 
             ini_set('display_errors', 1);
             ini_set('display_startup_errors', 1);
             error_reporting(E_ALL);
+
 
             include ("dbconnect.php");
             //Check to see if the 'username' session variable is set.
@@ -141,6 +143,7 @@
                     echo "<p> " . $row['ClubName'] . "</p>";
                 }
                 ?>
+
 
                 <?
             }

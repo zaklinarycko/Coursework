@@ -46,7 +46,7 @@
                     <a class="page-scroll" href="#news">News</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#login">Log In/Log out</a>
+                    <a class="page-scroll" href="#login">Log In/ Log out</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#contact">Contact</a>
@@ -120,21 +120,54 @@
             </div>
         </div>
         <div class="row">
+
+            <?
+            //Opens up a session
+
+            session_start();
+
+            ini_set('display_errors', 1);
+            ini_set('display_startup_errors', 1);
+            error_reporting(E_ALL);
+
+
+            include ("dbconnect.php");
+            //Check to see if the 'username' session variable is set.
+            if (isset($_SESSION['ClubID'])) //SESSION DOES EXIST
+            {
+                echo "<p>Hello " . $_SESSION['ClubID'] . "</p>";
+            $sql = "SELECT * FROM clubs WHERE ClubID='". $_SESSION['ClubName'] . "'";
+            $result = $db->query($sql);
+            while($row = $result->fetch_array())
+            {
+            echo "<p> " . $row['ClubName'] . "</p>";
+            }
+            ?>
+
+
+            <?
+            }
+            else //SESSION DOESNT EXIST
+            {
+            ?>
+
+
+
             <div class="clubs">
 
-                <?
-                include("dbconnect.php");
-                $sql_query = "SELECT * FROM clubs";
-                $results = $db->query($sql_query);
-                while($row = $result->fetch_array())
-                {
-                $ClubName = $row['ClubName'];
-                $Description = $row['Description'];
-                echo "
-                <h1>{$ClubName}</h1>
-                <p>{$Description}</p>
-                ";
+                <?php
+                include("dbconnect");
+                $ClubName = $_POST["ClubName"];
+                $ClubID = $_POST["ClubID"];
+                $Description = $_POST["Description"];
+
+                $sql = "INCERT INTO clubs (ClubID, ClubName, Description) VALUES ('$ClubID', '$ClubName', '$Description');
+                if (mysqli_query($db, $sql)) {
+                } else{
+                    echo "Error: ". $sql . "<br>" . mysqli_error ($db);
                 }
+
+                header("loction: index.php#clubs");
                 ?>
 
             </div>
@@ -236,8 +269,6 @@
 
             <?
 
-            //Opens up a session
-            session_start();
             include ("dbconnect.php");
             //Check to see if the 'username' session variable is set.
             if (isset($_SESSION['Username'])) //SESSION DOES EXIST
