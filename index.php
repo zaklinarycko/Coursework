@@ -78,7 +78,7 @@
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">About</h2>
                 <h3 class="text-muted">We are an association of local and progressive sports clubs who are working together
-                    to develop safe and fun sport & fitness activities in the Portlethen area. :)
+                    to develop safe and fun sport & fitness activities in the Portlethen area.
                 </h3>
             </div>
         </div>
