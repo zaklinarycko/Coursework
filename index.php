@@ -121,37 +121,24 @@
         </div>
         <div class="row">
 
-            <?
-            //Opens up a session
 
+
+            <?
+
+            //Opens up a session
             session_start();
 
             ini_set('display_errors', 1);
             ini_set('display_startup_errors', 1);
             error_reporting(E_ALL);
 
+            include("dbconnect.php");
 
-            include ("dbconnect.php");
-            //Check to see if the 'username' session variable is set.
+            $ClubID = $_GET['ClubID'];
             if (isset($_SESSION['ClubID'])) //SESSION DOES EXIST
-            {
-                echo "<p>Hello " . $_SESSION['ClubID'] . "</p>";
-                $sql = "SELECT * FROM clubs WHERE ClubID='". $_SESSION['ClubName'] . "'";
-                $result = $db->query($sql);
-                while($row = $result->fetch_array())
-                {
-                    echo "<p> " . $row['ClubName'] . "</p>";
-                }
-                ?>
+            $sql_query = "SELECT * FROM clubs WHERE ClubID = 1 ";
 
-
-                <?
-            }
-            else //SESSION DOESNT EXIST
-            {
             ?>
-
-
 
             <div class="clubs">
 
