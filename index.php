@@ -171,12 +171,6 @@
                                     echo $row['Title'] . " | ";
                                     }
                                     echo "</h2>";
-                                echo "<p>";
-                            while($row = $result->fetch_array()){
-                                // print out fields from row of data
-                                echo $row['Description'] . " | ";
-                            }
-                            echo "</p>";
 
                             ?>
                             </div>
