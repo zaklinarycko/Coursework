@@ -154,7 +154,7 @@
                             </div>
                             <div class="timeline-body">
 
-                                //try 9
+                                //try 10
 
                                 <?
 
@@ -162,29 +162,16 @@
 
                                 $sql_query = "SELECT * FROM health WHERE ItemID=2";
                                 $result = $db->query($sql_query);
-                                echo "<h4>";
+
                                 while($row = $result->fetch_array()){
                                     // print out fields from row of data
-                                    echo $row['Title'] . " | ";
+                                  "<h3>";  echo $row['Title'] . " | "; "</h3>";
+                                    "<p>"; echo $row['`Content`'] . " | "; "</p>";
                                 }
-                                echo "</h4>";
+
 
                                 ?>
 
-                                <?
-
-                                include ("dbconnect.php");
-
-                                $sql_query = "SELECT * FROM health WHERE ItemID=2";
-                                $result = $db->query($sql_query);
-                                echo "<p>";
-                                while($row = $result->fetch_array()){
-                                    // print out fields from row of data
-                                    echo $row['Content'] . " | ";
-                                }
-                                echo "</p>";
-
-                                ?>
 
                             </div>
                         </div>
