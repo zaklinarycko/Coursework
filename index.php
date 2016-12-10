@@ -153,7 +153,7 @@
                                 <?
 
                                 include ("dbconnect.php");
-                                $sql_query = "SELECT * FROM health WHERE ClubID LIKE '1'";
+                                $sql_query = "SELECT * FROM health WHERE ClubID = '1'";
                                 $result = $db->query($sql_query);
                                 echo "<h3>";
                                 while($row = $result->fetch_array()){
