@@ -150,6 +150,7 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
+
                                 <?
 
                                 include ("dbconnect.php");
@@ -166,19 +167,6 @@
                             </div>
                             <div class="timeline-body">
 
-                                <?
-
-                                include ("dbconnect.php");
-                                $sql_query = "SELECT * FROM health WHERE ClubID = '1'";
-                                $result = $db->query($sql_query);
-                                echo "<p class="text-muted">";
-                                while($row = $result->fetch_array()){
-                                    // print out fields from row of data
-                                    echo $row['Description'] . " | ";
-                                }
-                                echo "</p>";
-
-                                ?>
 
                             </div>
                         </div>
