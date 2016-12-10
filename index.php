@@ -264,18 +264,6 @@
             }
             ?>
 
-            <?php
-
-            function displayaccess($AccessID) {
-                if ($AccessID == "1") {
-                    echo "<p>You are currently logged in as a Sport Club users</p>";
-                }
-                elseif ($AccessID == "2") {
-                    echo "<p>You are currently logged in as a Netball User.</p>";
-                }
-            }
-            ?>
-
         </div>
 
     </div>
