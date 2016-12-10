@@ -148,16 +148,19 @@
                         <div class="timeline-image">
 
                         </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
 
+                            </div>
                             <div class="timeline-body">
 
-                                //try 6
+                                //try 7
 
                                 <?
 
                                 include ("dbconnect.php");
 
-                                $sql_query = "SELECT * FROM health WHERE ItemID=1";
+                                $sql_query = "SELECT * FROM health WHERE ItemID=2";
                                 $result = $db->query($sql_query);
                                 echo "<h3>";
                                 while($row = $result->fetch_array()){
@@ -165,6 +168,7 @@
                                     echo $row['Title'] . " | ";
                                 }
                                 echo "</h3>";
+
 
                                 ?>
 
