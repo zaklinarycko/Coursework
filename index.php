@@ -154,7 +154,6 @@
                             </div>
                             <div class="timeline-body">
 
-                                //try 12
 
                                 <?
 
@@ -185,11 +184,28 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>March 2011</h4>
-                                <h4 class="subheading">An Agency is Born</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+
+                                <?
+
+                                include ("dbconnect.php");
+
+                                $sql_query = "SELECT * FROM health WHERE ItemID=4";
+                                $result = $db->query($sql_query);
+
+                                // print out fields from row of data
+                                while($row = $result->fetch_array()){
+
+                                    $Title = $row['Title'];
+                                    $Content = $row['Content'];
+
+                                    echo "<h2>{$Title}</h2>";
+                                    echo "<p>{$Content}</p>";
+                                }
+
+                                ?>
+
                             </div>
                         </div>
                     </li>
@@ -199,12 +215,28 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>December 2012</h4>
-                                <h4 class="subheading">Transition to Full Service</h4>
+
                             </div>
+
                             <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                            </div>
+                                <?
+
+                                include ("dbconnect.php");
+
+                                $sql_query = "SELECT * FROM health WHERE ItemID=5";
+                                $result = $db->query($sql_query);
+
+                                // print out fields from row of data
+                                while($row = $result->fetch_array()){
+
+                                    $Title = $row['Title'];
+                                    $Content = $row['Content'];
+
+                                    echo "<h2>{$Title}</h2>";
+                                    echo "<p>{$Content}</p>";
+                                }
+
+                                ?>                            </div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
@@ -213,12 +245,27 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>July 2014</h4>
-                                <h4 class="subheading">Phase Two Expansion</h4>
+
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                            </div>
+                                <?
+
+                                include ("dbconnect.php");
+
+                                $sql_query = "SELECT * FROM health WHERE ItemID=7";
+                                $result = $db->query($sql_query);
+
+                                // print out fields from row of data
+                                while($row = $result->fetch_array()){
+
+                                    $Title = $row['Title'];
+                                    $Content = $row['Content'];
+
+                                    echo "<h2>{$Title}</h2>";
+                                    echo "<p>{$Content}</p>";
+                                }
+
+                                ?>                            </div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
