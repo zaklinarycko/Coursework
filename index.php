@@ -151,8 +151,6 @@
                         <div class="timeline-panel">
                             <div class="timeline-heading">
 
-                                //try
-
                                 <?
 
                                 include ("dbconnect.php");
@@ -168,6 +166,7 @@
                                 echo "</h3>";
 
                                 ?>
+
                             </div>
                             <div class="timeline-body">
 
