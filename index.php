@@ -154,7 +154,7 @@
                             </div>
                             <div class="timeline-body">
 
-                                //try 11
+                                //try 12
 
                                 <?
 
@@ -163,17 +163,14 @@
                                 $sql_query = "SELECT * FROM health WHERE ItemID=2";
                                 $result = $db->query($sql_query);
 
+                                // print out fields from row of data
                                 while($row = $result->fetch_array()){
-                                    // print out fields from row of data
-                                  "<h3>";  echo $row['Title'] . " | "; "</h3>";
-                                }
 
-                                while($row = $result->fetch_array()) {
-                                    // print out fields from row of data
-                                    "<p>";
-                                    echo $row['`Content`'] . " | ";
-                                    "</p>";
+                                    $Title = $row['Title'];
+                                    $Content = $row['Content'];
 
+                                  echo "<h2>{$Title}</h2>";
+                                    echo "<p>{$Content}</p>";
                                 }
 
                                 ?>
