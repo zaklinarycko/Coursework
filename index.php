@@ -148,9 +148,11 @@
                         <div class="timeline-image">
 
                         </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                    //try5
+
+                            <div class="timeline-body">
+
+                                //try 6
+
                                 <?
 
                                 include ("dbconnect.php");
@@ -164,18 +166,7 @@
                                 }
                                 echo "</h3>";
 
-                                echo "<p>";
-                                while($row = $result->fetch_array()){
-                                    // print out fields from row of data
-                                    echo $row['Description'] . " | ";
-                                }
-                                echo "<p>";
-
                                 ?>
-
-                            </div>
-                            <div class="timeline-body">
-
 
                             </div>
                         </div>
