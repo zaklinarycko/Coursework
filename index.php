@@ -163,12 +163,13 @@
                             <?
 
                             include ("dbconnect.php");
-                                $sql_query = "SELECT * FROM health";
+                                $sql_query = "SELECT * FROM health WHERE ItemID = 1";
                                 $result = $db->query($sql_query);
                                 echo "<p><strong></strong>";
                                     while($row = $result->fetch_array()){
                                     // print out fields from row of data
                                     echo $row['Title'] . " | ";
+                                        echo $row['Description'] . " | ";
                                     }
                                     echo "</p>";
 
