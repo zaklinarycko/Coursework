@@ -150,12 +150,12 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                    //try2
+                    //try3
                                 <?
 
                                 include ("dbconnect.php");
 
-                                $sql_query = "SELECT Title FROM health WHERE ItemID = '1'";
+                                $sql_query = "SELECT Title FROM health WHERE ItemID = 'ItemID'";
                                 $result = $db->query($sql_query);
                                 echo "<h3>";
                                 while($row = $result->fetch_array()){
