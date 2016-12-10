@@ -150,23 +150,22 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>2009-2011</h4>
-                                <h4 class="subheading">Our Humble Beginnings</h4>
-                            </div>
-                            <div class="timeline-body">
-                            <?
+                                <?
 
-                            include ("dbconnect.php");
-                                $sql_query = "SELECT * FROM health";
+                                include ("dbconnect.php");
+                                $sql_query = "SELECT * FROM health WHERE ClubID LIKE '1'";
                                 $result = $db->query($sql_query);
-                                echo "<h2>";
-                                    while($row = $result->fetch_array()){
+                                echo "<h3>";
+                                while($row = $result->fetch_array()){
                                     // print out fields from row of data
                                     echo $row['Title'] . " | ";
-                                    }
-                                    echo "</h2>";
+                                }
+                                echo "</h3>";
 
-                            ?>
+                                ?>
+                            </div>
+                            <div class="timeline-body">
+
                             </div>
                         </div>
                     </li>
