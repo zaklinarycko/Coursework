@@ -157,7 +157,7 @@
                             <?
 
                             include ("dbconnect.php");
-                                $sql_query = "SELECT * FROM health WHERE ClubID";
+                                $sql_query = "SELECT * FROM health";
                                 $result = $db->query($sql_query);
                                 echo "<h2>";
                                     while($row = $result->fetch_array()){
