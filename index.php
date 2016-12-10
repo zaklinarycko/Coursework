@@ -154,7 +154,7 @@
                             </div>
                             <div class="timeline-body">
 
-                                //try 10
+                                //try 11
 
                                 <?
 
@@ -166,9 +166,15 @@
                                 while($row = $result->fetch_array()){
                                     // print out fields from row of data
                                   "<h3>";  echo $row['Title'] . " | "; "</h3>";
-                                    "<p>"; echo $row['`Content`'] . " | "; "</p>";
                                 }
 
+                                while($row = $result->fetch_array()) {
+                                    // print out fields from row of data
+                                    "<p>";
+                                    echo $row['`Content`'] . " | ";
+                                    "</p>";
+
+                                }
 
                                 ?>
 
