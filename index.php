@@ -163,14 +163,14 @@
                             <?
 
                             include ("dbconnect.php");
-                                $sql_query = "SELECT * FROM health WHERE ItemID = 1";
+                                $sql_query = "SELECT * FROM health WHERE ClubID = 1";
                                 $result = $db->query($sql_query);
-                                echo "<p><strong></strong>";
+                                echo "<h2>";
                                     while($row = $result->fetch_array()){
                                     // print out fields from row of data
                                     echo $row['Title'] . " | ";
                                     }
-                                    echo "</p>";
+                                    echo "</h2>";
 
                             ?>
                             </div>
