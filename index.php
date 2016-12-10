@@ -156,7 +156,9 @@
                                 <?
 
                                 include ("dbconnect.php");
-                                $sql_query = "SELECT * FROM health WHERE ItemID = '1'";
+
+                                $ItemID = $_GET['ItemID']
+                                $sql_query = "SELECT * FROM health WHERE ItemID = 'ItemID'";
                                 $result = $db->query($sql_query);
                                 echo "<h3>";
                                 while($row = $result->fetch_array()){
