@@ -2,6 +2,7 @@
 
 //Includes the Database connection script
 include ("dbconnect.php");
+
 //GETS THE USERNAME AND PASSWORD FROM PREVIOUS PAGE
 $username = $_POST["username"];
 $password = $_POST["password"];

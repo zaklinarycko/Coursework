@@ -160,7 +160,19 @@
                                 <h4 class="subheading">Our Humble Beginnings</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            <?
+
+                            include ("dbconnect.php");
+                                $sql_query = "SELECT * FROM health";
+                                $result = $db->query($sql_query);
+                                echo "<p><strong></strong>";
+                                    while($row = $result->fetch_array()){
+                                    // print out fields from row of data
+                                    echo $row['Title'] . " | ";
+                                    }
+                                    echo "</p>";
+
+                            ?>
                             </div>
                         </div>
                     </li>
@@ -266,13 +278,13 @@
             }
             ?>
 
-            <h1>Signup Form</h1>
+            <h2>Signup Form</h2>
             <form method="post" action="signup2.php">
                 <p><input type="text" name="username" value="" placeholder="Username"></p>
                 <p><input type="text" name="email" value="" placeholder="email"></p>
                 <p><input type="password" name="password" value="" placeholder="Password"></p>
                 <p><input type="password" name="passwordcheck" value="" placeholder="Confirm Password"></p>
-                <p class="submit"><input type="submit" name="commit" value="Login"></p>
+                <button type="submit" class="btn btn-xl" name="commit" value="Sign up"></button>
             </form>
 
         </div>
