@@ -2,12 +2,9 @@
 include ("dbconnect.php");
 
 //GETS THE USERNAME AND PASSWORD FROM PREVIOUS PAGE
-//$username = $_POST["Username"];
-//$password = $_POST["Password"];
+$username = $_POST["Username"];
+$password = $_POST["Password"];
 
-//GETS THE USERNAME AND PASSWORD FROM PREVIOUS PAGE
-//$username = $_POST["Username"];
-//$password = $_POST["Password"];
 
 //if ($username =="Username" && $password=="Password")
 
