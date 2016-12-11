@@ -144,9 +144,12 @@
         <div class="row">
 
             <form action="addpost.php" method="post">
+                ItemID:<input type="text" name="ItemID"><br>
                 Title:<input type="text" name="Title"><br>
                 Content:<input type="text" name="Content"><br>
-                <input type="submit" value="Submit">
+                AccessID:<input type="text" name="AccessID"><br>
+                PhotoID:<input type="text" name="PhotoID"><br>
+                <button type="submit" class="btn btn-xl" name="commit" value="Submit"></button>
             </form>
 
             </div>

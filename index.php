@@ -269,12 +269,9 @@ try
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <h4>Be Part
-                                <br>Of Our
-                                <br>Story!</h4>
+
                             <button type="submit" class="btn btn-xl"> <a href="addingnewscontent.php">ADD</a></button>
-                        </div>
+                        <
                     </li>
                 </ul>
             </div>
