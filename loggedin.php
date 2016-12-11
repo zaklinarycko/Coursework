@@ -293,47 +293,26 @@
             <?
 
             session_start();
+            $accesslevel = $_COOKIE ('access_level_cookie');
 
-            include ("dbconnect.php");
-            //Check to see if the 'username' session variable is set.
-            if (isset($_SESSION['Username'])) //SESSION DOES EXIST
-            {
-                echo "<p>Hello " . $_SESSION['Username'] . "</p>";
-                $sql = "SELECT * FROM users WHERE Username='". $_SESSION['Username'] . "'";
-                $result = $db->query($sql);
-                while($row = $result->fetch_array())
-                {
-                    echo "<p>User type is " . $row['Username'] . "</p>";
+            displayAccessLevelInforamtion($accesslevel);
+
+            function displayAccessLevelInforamtion($accesslevel)
+
+            if ($accesslevel == "standarduser") {
+                if ($accesslevel == "standarduser") {
+                    echo "<p> You are currently logged in as a standard user</p>";
+
                 }
-                ?>
-                <button type="submit" class="btn btn-xl"> <a href="logout.php">Logout</a></button>
-                <?
+
+                elseif ($accesslevel == "root") {
+                    echo "<p> You are currently logged in as a root user";
+                }
             }
 
-            else //SESSION DOESNT EXIST
-            {
-                ?>
-
-                <form method="post" action="checklogin.php">
-                    <p><input type="text" name="Username" value="" placeholder="Username or Email"></p>
-                    <p><input type="password" name="Password" value="" placeholder="Password"></p>
-                    <button type="submit" class="btn btn-xl">Log In</button>
-
-                    <input type="checkbox" checked="checked"> Remember me
-                </form>
-
-                <?
-            }
             ?>
 
-            <h2>Signup Form</h2>
-            <form method="post" action="signup2.php">
-                <p><input type="text" name="username" value="" placeholder="Username"></p>
-                <p><input type="text" name="email" value="" placeholder="email"></p>
-                <p><input type="password" name="password" value="" placeholder="Password"></p>
-                <p><input type="password" name="passwordcheck" value="" placeholder="Confirm Password"></p>
-                <button type="submit" class="btn btn-xl" name="commit" value="Sign up"></button>
-            </form>
+            <button type="submit" class="btn btn-xl"> <a href="logout.php">Logout</a></button>
 
         </div>
 

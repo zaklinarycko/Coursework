@@ -5,6 +5,12 @@ include ("dbconnect.php");
 $username = $_POST["Username"];
 $password = $_POST["Password"];
 
+if ($username =="Username" && $password=="Password")
+
+{
+    setcookie('access_level_cookie', 'standarduser')
+}
+
 
 //MYSQL INJECTION PROTECTION
 //$username = mysqli_real_escape_string($username);
