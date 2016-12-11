@@ -14,8 +14,8 @@ $password = $_POST["Password"];
 
 
 //MYSQL INJECTION PROTECTION
-$username = mysqli_real_escape_string($username);
-$password = mysqli_real_escape_string($password);
+//$username = mysqli_real_escape_string($username);
+//$password = mysqli_real_escape_string($password);
 
 //FIND THE USER IN THE DATABASE
 $sql="SELECT * FROM users WHERE Username='". $username ."' and Password='". $password . "'";
@@ -34,7 +34,7 @@ $result = $db->query($sql);
 
     if($loginSuccessful==1){
 
-        // Register $myusername, $mypassword and redirect to file "index.php"
+        // Register $myusername, $mypassword and redirect to file "loggedin.php"
 
     session_start();
     $_SESSION['Username'] = $username;
