@@ -154,12 +154,12 @@
                             </div>
                             <div class="timeline-body">
 
-
+try
                                 <?
 
                                 include ("dbconnect.php");
 
-                                $sql_query = "SELECT * FROM health WHERE ItemID=2";
+                                $sql_query = "SELECT * FROM health WHERE ItemID='ItemID'";
                                 $result = $db->query($sql_query);
 
                                 // print out fields from row of data
