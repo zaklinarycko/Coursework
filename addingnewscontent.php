@@ -125,10 +125,10 @@
             </div>
 
             <div
-                <iframe src="https://calendar.google.com/calendar/embed?src=n53j6l0hgeii063i8pe6k0o1f8%40group.calendar.google.com&ctz=Europe/London" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-            </div>
-
+            <iframe src="https://calendar.google.com/calendar/embed?src=n53j6l0hgeii063i8pe6k0o1f8%40group.calendar.google.com&ctz=Europe/London" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
         </div>
+
+    </div>
     </div>
 </section>
 
@@ -142,144 +142,16 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12">
-                <ul class="timeline">
-                    <li>
-                        <div class="timeline-image">
 
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
+            <form action="addpost.php" method="post">
+                Title:<input type="text" name="Title"><br>
+                Content:<input type="text" name="Content"><br>
+                <input type="submit" value="Submit">
+            </form>
 
-                            </div>
-                            <div class="timeline-body">
-
-try
-                                <?
-
-                                include ("dbconnect.php");
-
-                                $sql_query = "SELECT * FROM health WHERE ItemID=2";
-                                $result = $db->query($sql_query);
-
-                                // print out fields from row of data
-                                while($row = $result->fetch_array()){
-
-                                    $Title = $row['Title'];
-                                    $Content = $row['Content'];
-
-                                  echo "<h2>{$Title}</h2>";
-                                    echo "<p>{$Content}</p>";
-                                }
-
-                                ?>
-
-
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                            </div>
-                            <div class="timeline-body">
-
-                                <?
-
-                                include ("dbconnect.php");
-
-                                $sql_query = "SELECT * FROM health WHERE ItemID=4";
-                                $result = $db->query($sql_query);
-
-                                // print out fields from row of data
-                                while($row = $result->fetch_array()){
-
-                                    $Title = $row['Title'];
-                                    $Content = $row['Content'];
-
-                                    echo "<h2>{$Title}</h2>";
-                                    echo "<p>{$Content}</p>";
-                                }
-
-                                ?>
-
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-image">
-
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-
-                            </div>
-
-                            <div class="timeline-body">
-                                <?
-
-                                include ("dbconnect.php");
-
-                                $sql_query = "SELECT * FROM health WHERE ItemID=5";
-                                $result = $db->query($sql_query);
-
-                                // print out fields from row of data
-                                while($row = $result->fetch_array()){
-
-                                    $Title = $row['Title'];
-                                    $Content = $row['Content'];
-
-                                    echo "<h2>{$Title}</h2>";
-                                    echo "<p>{$Content}</p>";
-                                }
-
-                                ?>                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-
-                            </div>
-                            <div class="timeline-body">
-                                <?
-
-                                include ("dbconnect.php");
-
-                                $sql_query = "SELECT * FROM health WHERE ItemID=7";
-                                $result = $db->query($sql_query);
-
-                                // print out fields from row of data
-                                while($row = $result->fetch_array()){
-
-                                    $Title = $row['Title'];
-                                    $Content = $row['Content'];
-
-                                    echo "<h2>{$Title}</h2>";
-                                    echo "<p>{$Content}</p>";
-                                }
-
-                                ?>                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <h4>Be Part
-                                <br>Of Our
-                                <br>Story!</h4>
-                            <button type="submit" class="btn btn-xl">Be part of our Story</button>
-                        </div>
-                    </li>
-                </ul>
             </div>
         </div>
-    </div>
+
 </section>
 
 <!-- Log in/Log out Section -->
