@@ -273,7 +273,7 @@ try
                             <h4>Be Part
                                 <br>Of Our
                                 <br>Story!</h4>
-                            <button type="submit" class="btn btn-xl"> <a href="addingnewscontent.php.php">ADD</a></button>
+                            <button type="submit" class="btn btn-xl"> <a href="addingnewscontent.php">ADD</a></button>
                         </div>
                     </li>
                 </ul>
