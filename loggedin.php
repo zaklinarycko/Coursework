@@ -6,19 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="stylesheet" href="style/main.css"/>
     <link rel="stylesheet" href="style/main.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style/main.css"/>
+    <link rel="stylesheet" href="style/normalization.css"/>
 
 
 </head>
-
-<body>
 
 <body id="page-top" class="index">
 
 <!-- Navigation -->
 <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
     <div class="container">
+
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header page-scroll">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -42,7 +46,7 @@
                     <a class="page-scroll" href="#news">News</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#login/logout">Log In/Log out</a>
+                    <a class="page-scroll" href="#login">Log In/ Log out</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#contact">Contact</a>
@@ -57,10 +61,12 @@
 <!-- Header -->
 <header>
     <div class="container">
+
         <div class="intro-text">
             <div class="intro-lead-in">Welcome To Sportlethen!</div>
             <div class="intro-heading">It's Nice To Meet You</div>
-            <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
+            <a href="index.php" class="page-scroll btn btn-xl">Tell Me More</a>
+
         </div>
     </div>
 </header>
@@ -71,7 +77,7 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">About</h2>
-                <h3 class="section-subheading text-muted">We are an association of local and progressive sports clubs who are working together
+                <h3 class="text-muted">We are an association of local and progressive sports clubs who are working together
                     to develop safe and fun sport & fitness activities in the Portlethen area.
                 </h3>
             </div>
@@ -109,95 +115,20 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Clubs</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h3 class="section-subheading text-muted">Here you can view all the clubs available in the area.</h3>
+
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Round Icons</h4>
-                    <p class="text-muted">Graphic Design</p>
-                </div>
+
+            <div class="clubs">
             </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/startup-framework.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Startup Framework</h4>
-                    <p class="text-muted">Website Design</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/treehouse.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Treehouse</h4>
-                    <p class="text-muted">Website Design</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/golden.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Golden</h4>
-                    <p class="text-muted">Website Design</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/escape.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Escape</h4>
-                    <p class="text-muted">Website Design</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Dreams</h4>
-                    <p class="text-muted">Website Design</p>
-                </div>
-            </div>
+
+            <div
+            <iframe src="https://calendar.google.com/calendar/embed?src=n53j6l0hgeii063i8pe6k0o1f8%40group.calendar.google.com&ctz=Europe/London" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
         </div>
+
+    </div>
     </div>
 </section>
 
@@ -207,7 +138,7 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">News</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h3 class="section-subheading text-muted">All the news happening in the area.</h3>
             </div>
         </div>
         <div class="row">
@@ -215,66 +146,132 @@
                 <ul class="timeline">
                     <li>
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>2009-2011</h4>
-                                <h4 class="subheading">Our Humble Beginnings</h4>
+
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+
+                                try
+                                <?
+
+                                include ("dbconnect.php");
+
+                                $sql_query = "SELECT * FROM health WHERE ItemID=2";
+                                $result = $db->query($sql_query);
+
+                                // print out fields from row of data
+                                while($row = $result->fetch_array()){
+
+                                    $Title = $row['Title'];
+                                    $Content = $row['Content'];
+
+                                    echo "<h2>{$Title}</h2>";
+                                    echo "<p>{$Content}</p>";
+                                }
+
+                                ?>
+
+
                             </div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>March 2011</h4>
-                                <h4 class="subheading">An Agency is Born</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+
+                                <?
+
+                                include ("dbconnect.php");
+
+                                $sql_query = "SELECT * FROM health WHERE ItemID=4";
+                                $result = $db->query($sql_query);
+
+                                // print out fields from row of data
+                                while($row = $result->fetch_array()){
+
+                                    $Title = $row['Title'];
+                                    $Content = $row['Content'];
+
+                                    echo "<h2>{$Title}</h2>";
+                                    echo "<p>{$Content}</p>";
+                                }
+
+                                ?>
+
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>December 2012</h4>
-                                <h4 class="subheading">Transition to Full Service</h4>
+
                             </div>
+
                             <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                            </div>
+                                <?
+
+                                include ("dbconnect.php");
+
+                                $sql_query = "SELECT * FROM health WHERE ItemID=5";
+                                $result = $db->query($sql_query);
+
+                                // print out fields from row of data
+                                while($row = $result->fetch_array()){
+
+                                    $Title = $row['Title'];
+                                    $Content = $row['Content'];
+
+                                    echo "<h2>{$Title}</h2>";
+                                    echo "<p>{$Content}</p>";
+                                }
+
+                                ?>                            </div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
+
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>July 2014</h4>
-                                <h4 class="subheading">Phase Two Expansion</h4>
+
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                            </div>
+                                <?
+
+                                include ("dbconnect.php");
+
+                                $sql_query = "SELECT * FROM health WHERE ItemID=7";
+                                $result = $db->query($sql_query);
+
+                                // print out fields from row of data
+                                while($row = $result->fetch_array()){
+
+                                    $Title = $row['Title'];
+                                    $Content = $row['Content'];
+
+                                    echo "<h2>{$Title}</h2>";
+                                    echo "<p>{$Content}</p>";
+                                }
+
+                                ?>                            </div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <h4>Be Part
-                                <br>Of Our
-                                <br>Story!</h4>
-                        </div>
+
+                        <button type="submit" class="btn btn-xl"> <a href="addingnewscontent.php#news">ADD</a></button>
+
                     </li>
                 </ul>
             </div>
@@ -283,20 +280,20 @@
 </section>
 
 <!-- Log in/Log out Section -->
-<section id="login/logout" class="bg-light-gray">
+<section id="login" class="bg-light-gray">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Log In/Log out</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h3 class="section-subheading text-muted">Log in to get more access.</h3>
             </div>
         </div>
         <div class="row">
 
             <?
 
-            //Opens up a session
             session_start();
+
             include ("dbconnect.php");
             //Check to see if the 'username' session variable is set.
             if (isset($_SESSION['Username'])) //SESSION DOES EXIST
@@ -309,23 +306,34 @@
                     echo "<p>User type is " . $row['Username'] . "</p>";
                 }
                 ?>
-                <a href="logout.php">Logout</a>
+                <button type="submit" class="btn btn-xl"> <a href="logout.php">Logout</a></button>
                 <?
             }
+
             else //SESSION DOESNT EXIST
             {
                 ?>
 
-                <h1>My Login Form</h1>
                 <form method="post" action="checklogin.php">
                     <p><input type="text" name="Username" value="" placeholder="Username or Email"></p>
                     <p><input type="password" name="Password" value="" placeholder="Password"></p>
-                    <p class="submit"><input type="submit" name="commit" value="Login"></p>
+                    <button type="submit" class="btn btn-xl">Log In</button>
+
+                    <input type="checkbox" checked="checked"> Remember me
                 </form>
 
                 <?
             }
             ?>
+
+            <h2>Signup Form</h2>
+            <form method="post" action="signup2.php">
+                <p><input type="text" name="username" value="" placeholder="Username"></p>
+                <p><input type="text" name="email" value="" placeholder="email"></p>
+                <p><input type="password" name="password" value="" placeholder="Password"></p>
+                <p><input type="password" name="passwordcheck" value="" placeholder="Confirm Password"></p>
+                <button type="submit" class="btn btn-xl" name="commit" value="Sign up"></button>
+            </form>
 
         </div>
 
@@ -381,47 +389,18 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <span class="copyright">Copyright &copy; Your Website 2016</span>
+                <span class="copyright">Copyright &copy; Created by Zaklina Rycko, Cara Henderson, Sarah Thomson, Sarah Valentine and Lucy Axford</span>
             </div>
             <div class="col-md-4">
                 <ul class="list-inline social-buttons">
-                    <li><a href="#"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li><a href="#"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <ul class="list-inline quicklinks">
-                    <li><a href="#">Privacy Policy</a>
-                    </li>
-                    <li><a href="#">Terms of Use</a>
+
+                    <li><a href="https://www.facebook.com/Sportlethen/?hc_ref=SEARCH&fref=nf"><i class="fa fa-facebook"></i></a>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
 </footer>
-
-
-<!-- jQuery -->
-<script src="vendor/jquery/jquery.min.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-<!-- Plugin JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-<!-- Contact Form JavaScript -->
-<script src="js/jqBootstrapValidation.js"></script>
-<script src="js/contact_me.js"></script>
-
-<!-- Theme JavaScript -->
-<script src="js/agency.min.js"></script>
-
 
 </body>
 </html>

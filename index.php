@@ -154,7 +154,6 @@
                             </div>
                             <div class="timeline-body">
 
-try
                                 <?
 
                                 include ("dbconnect.php");
@@ -270,8 +269,6 @@ try
                     </li>
                     <li class="timeline-inverted">
 
-                            <button type="submit" class="btn btn-xl"> <a href="addingnewscontent.php#news">ADD</a></button>
-                        <
                     </li>
                 </ul>
             </div>

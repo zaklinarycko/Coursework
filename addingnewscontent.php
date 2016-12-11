@@ -37,19 +37,19 @@
                     <a href="#page-top"></a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="index.php#about">About</a>
+                    <a class="page-scroll" href="index.php">About</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="index.php#clubs">Clubs</a>
+                    <a class="page-scroll" href="index.php">Clubs</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="index.php#news">News</a>
+                    <a class="page-scroll" href="index.php">News</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="index.php#login">Log In/ Log out</a>
+                    <a class="page-scroll" href="index.php">Log In/ Log out</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="index.php#contact">Contact</a>
+                    <a class="page-scroll" href="index.php">Contact</a>
                 </li>
             </ul>
         </div>

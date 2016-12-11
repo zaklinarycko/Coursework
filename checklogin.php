@@ -27,10 +27,11 @@ $result = $db->query($sql);
 
     if($loginSuccessful==1){
 
-        // Register $myusername, $mypassword and redirect to file "welcome.php"
+        // Register $myusername, $mypassword and redirect to file "index.php"
+
     session_start();
     $_SESSION['Username'] = $username;
-    header("location:index.php");
+    header("location:loggedin.php");
     }
         else {
             echo "Wrong Username or Password";
