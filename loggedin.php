@@ -290,25 +290,25 @@
         </div>
         <div class="row">
 
-            <?
+           <?
 
-            session_start();
-            $accesslevel = $_COOKIE ('access_level_cookie');
+           // session_start();
+           // $accesslevel = $_COOKIE ('access_level_cookie');
 
-            displayAccessLevelInforamtion($accesslevel);
+//            displayAccessLevelInforamtion($accesslevel);
+//
+  //          function displayAccessLevelInforamtion($accesslevel)
 
-            function displayAccessLevelInforamtion($accesslevel)
+//            if ($accesslevel == "standarduser") {
+  //              if ($accesslevel == "standarduser") {
+    //                echo "<p> You are currently logged in as a standard user</p>";
 
-            if ($accesslevel == "standarduser") {
-                if ($accesslevel == "standarduser") {
-                    echo "<p> You are currently logged in as a standard user</p>";
+      //          }
 
-                }
-
-                elseif ($accesslevel == "root") {
-                    echo "<p> You are currently logged in as a root user";
-                }
-            }
+//                elseif ($accesslevel == "root") {
+    //                echo "<p> You are currently logged in as a root user";
+  //              }
+      //      }
 
             ?>
 

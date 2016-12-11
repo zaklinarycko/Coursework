@@ -2,14 +2,18 @@
 include ("dbconnect.php");
 
 //GETS THE USERNAME AND PASSWORD FROM PREVIOUS PAGE
-$username = $_POST["Username"];
-$password = $_POST["Password"];
+//$username = $_POST["Username"];
+//$password = $_POST["Password"];
 
-if ($username =="Username" && $password=="Password")
+//GETS THE USERNAME AND PASSWORD FROM PREVIOUS PAGE
+//$username = $_POST["Username"];
+//$password = $_POST["Password"];
 
-{
-    setcookie('access_level_cookie', 'standarduser')
-}
+//if ($username =="Username" && $password=="Password")
+
+//{
+//    setcookie('access_level_cookie', 'standarduser')
+//}
 
 
 //MYSQL INJECTION PROTECTION
