@@ -128,7 +128,7 @@
 
             </div>
 
-            <div class="club">
+            <div class="row">
                 <?
                 include("dbconnect.php");
 
