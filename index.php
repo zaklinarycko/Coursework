@@ -176,7 +176,7 @@
                                     $Title = $row['Title'];
                                     $Content = $row['Content'];
 
-                                  echo "<h2>{$Title}</h2>";
+                                  echo "<h2>Mike was here{$Title}</h2>";
                                     echo "<p>{$Content}</p>";
                                 }
 
