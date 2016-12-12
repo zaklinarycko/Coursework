@@ -151,7 +151,7 @@ session_start();
                     $Description = $row["Description"];
 
                     echo "
-                            <h2 class='section-heading'>{$ClubName}</h2>
+                            <h3 class='section-heading'>{$ClubName}</h3>
                             <p class='text-muted'>{$Description}</p>
     ";
                 }
@@ -221,7 +221,7 @@ session_start();
                             <div class='timeline-heading'>
                             </div>
                             <div class='timeline-body'>
-                                    <h2 class='section-heading'>{$Title}</h2>
+                                    <h3 class='section-heading'>{$Title}</h3>
                                     <p class='text-muted'>{$Content}</p>
 
                                             </div>
@@ -262,8 +262,6 @@ session_start();
         <div class="row">
 
             <?
-
-            session_start();
 
             include ("dbconnect.php");
             //Check to see if the 'username' session variable is set.
