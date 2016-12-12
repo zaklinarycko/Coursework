@@ -280,13 +280,12 @@
                     <li class="timeline-inverted">
 
                         <button type="submit" class="btn btn-xl"> <a href="addingnewscontent.php#news">ADD</a></button>
+                        <div class="fb-page" data-href="https://www.facebook.com/Sportlethen/?fref=ts" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Sportlethen/?fref=ts" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Sportlethen/?fref=ts">Sportlethen CSH</a></blockquote></div>
+
 
                     </li>
                 </ul>
             </div>
-
-            <div class="fb-page" data-href="https://www.facebook.com/Sportlethen/?fref=ts" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Sportlethen/?fref=ts" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Sportlethen/?fref=ts">Sportlethen CSH</a></blockquote></div>
-
         </div>
     </div>
 </section>
