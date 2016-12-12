@@ -153,40 +153,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <ul class="timeline">
-                    <li>
-                        <div class="timeline-image">
 
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-
-                            </div>
-                            <div class="timeline-body">
-
-
-                                <?
-
-                                include ("dbconnect.php");
-
-                                $sql_query = "SELECT * FROM health WHERE ItemID=2";
-                                $result = $db->query($sql_query);
-
-                                // print out fields from row of data
-                                while($row = $result->fetch_array()){
-
-                                    $Title = $row['Title'];
-                                    $Content = $row['Content'];
-
-                                    echo "<h2>{$Title}</h2>";
-                                    echo "<p>{$Content}</p>";
-                                }
-
-                                ?>
-
-
-                            </div>
-                        </div>
-                    </li>
                     <li class="timeline-inverted">
                         <div class="timeline-image">
 
@@ -200,81 +167,46 @@
 
                                 include ("dbconnect.php");
 
-                                $sql_query = "SELECT * FROM health WHERE ItemID=4";
+                                $sql_query = "SELECT * FROM health";
                                 $result = $db->query($sql_query);
 
                                 // print out fields from row of data
+                                $timelineCheck = 1;
                                 while($row = $result->fetch_array()){
 
                                     $Title = $row['Title'];
                                     $Content = $row['Content'];
 
-                                    echo "<h2>{$Title}</h2>";
-                                    echo "<p>{$Content}</p>";
+                                    if ($timelineCheck==1){
+                                        $timelineCheck = 0;
+                                        echo "<li class='timeline'>";
+                                    }
+                                    else{
+                                        $timelineCheck=1;
+                                        echo"<li class='timeline-inverted'>";
+                                    }
+
+                                    echo"
+                        <div class='timeline-image'>
+
+                        </div>
+                        <div class='timeline-panel'>
+                            <div class='timeline-heading'>
+                            </div>
+                            <div class='timeline-body'>
+                                    <h2>{ lets try $Title}</h2>
+                                    <p>{$Content}</p>
+
+                                            </div>
+                        </div>
+                    </li>
+                                    ";
+
                                 }
 
                                 ?>
 
                             </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-image">
-
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-
-                            </div>
-
-                            <div class="timeline-body">
-                                <?
-
-                                include ("dbconnect.php");
-
-                                $sql_query = "SELECT * FROM health WHERE ItemID=5";
-                                $result = $db->query($sql_query);
-
-                                // print out fields from row of data
-                                while($row = $result->fetch_array()){
-
-                                    $Title = $row['Title'];
-                                    $Content = $row['Content'];
-
-                                    echo "<h2>{$Title}</h2>";
-                                    echo "<p>{$Content}</p>";
-                                }
-
-                                ?>                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-
-                            </div>
-                            <div class="timeline-body">
-                                <?
-
-                                include ("dbconnect.php");
-
-                                $sql_query = "SELECT * FROM health WHERE ItemID=7";
-                                $result = $db->query($sql_query);
-
-                                // print out fields from row of data
-                                while($row = $result->fetch_array()){
-
-                                    $Title = $row['Title'];
-                                    $Content = $row['Content'];
-
-                                    echo "<h2>{$Title}</h2>";
-                                    echo "<p>{$Content}</p>";
-                                }
-
-                                ?>                            </div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
