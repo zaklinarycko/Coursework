@@ -172,13 +172,14 @@ session_start();
                     ?>
 
                     <main>
+                        <h2 class="section-heading">Add a new club</h2>
                         <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
                         <script>tinymce.init({selector: 'textarea'});</script>
                         <form action="addingnewscontent.php" method="post">
                             <input type="text" name="ClubName" placeholder="ClubName">
                             <input type="text" name="Genre" placeholder="Genre">
                             <textarea name="Description"></textarea>
-                            <button type="submit" class="btn btn-xl" name="commit" value="Submit"></button>
+                            <button type="submit" class="btn btn-xl">ADD</button>
                         </form>
                     </main>
 
@@ -237,12 +238,13 @@ session_start();
                     ?>
 
             <main>
+                <h2 class="section-heading">Add a new aricle</h2>
                 <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
                 <script>tinymce.init({selector: 'textarea'});</script>
                 <form action="addingnewscontent.php" method="post">
                     <input type="text" name="Title" placeholder="Title">
                     <textarea name="Content"></textarea>
-                    <button type="submit" class="btn btn-xl" name="commit" value="Submit"></button>
+                    <button type="submit" class="btn btn-xl">ADD</button>
                 </form>
             </main>
 
@@ -339,7 +341,8 @@ session_start();
                 <p><input type="text" name="email" value="" placeholder="email"></p>
                 <p><input type="password" name="password" value="" placeholder="Password"></p>
                 <p><input type="password" name="passwordcheck" value="" placeholder="Confirm Password"></p>
-                <button type="submit" class="btn btn-xl" name="commit" value="Sign up"></button>
+                <button type="submit" class="btn btn-xl"> <a href="signup2.php">Submit</a></button>
+
             </form>
 
         </div>
