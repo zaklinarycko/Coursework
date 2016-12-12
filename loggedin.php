@@ -128,15 +128,28 @@
 
             </div>
         </div>
+
         <div class="row">
+            <?
 
-            <div class="clubs">
-            </div>
+            include("dbconnect.php");
 
-            <div
-            <iframe src="https://calendar.google.com/calendar/embed?src=n53j6l0hgeii063i8pe6k0o1f8%40group.calendar.google.com&ctz=Europe/London" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            $sql_query = "SELECT * FROM clubs";
+            $result = $db->query($sql_query);
+
+            while($row = $result->fetch_array())
+            {
+                $ClubName = $row["ClubName"];
+                $Description = $row["Description"];
+
+                echo "
+                            <h3 class='section-heading'>{$ClubName}</h3>
+                            <p class='text-muted'>{$Description}</p>
+    ";
+            }
+            ?>
         </div>
-
+        </div>
     </div>
     </div>
 </section>
