@@ -164,8 +164,8 @@
                 <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
                 <script>tinymce.init({selector: 'textarea'});</script>
                 <form action="addingnewscontent.php" method="post">
-                    <input type="text" name="articleName" placeholder="Article Name">
-                    <textarea name="articleText"></textarea>
+                    <input type="text" name="Title" placeholder="Title">
+                    <textarea name="Content"></textarea>
                     <button type="submit" class="btn btn-xl" name="commit" value="Submit"></button>
                 </form>
             </main>
