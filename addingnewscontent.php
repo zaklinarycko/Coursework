@@ -172,10 +172,10 @@
 
             <?
 
-            include("scripts/footer.php");
+           // include("scripts/footer.php");
 
             } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            //    include ('scripts/dbconnect.php');
+                include ('dbconnect.php');
                 $ItemID = str_replace(' ', '-', $_POST["ItemID"]);
                 $Title = $_POST["Title"];
                 $Content = $_POST["Content"];
