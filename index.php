@@ -199,7 +199,7 @@
 
                                 include ("dbconnect.php");
 
-                                $sql_query = "SELECT * FROM health WHERE ItemID=4";
+                                $sql_query = "SELECT * FROM health";
                                 $result = $db->query($sql_query);
 
                                 // print out fields from row of data
@@ -208,8 +208,26 @@
                                     $Title = $row['Title'];
                                     $Content = $row['Content'];
 
-                                    echo "<h2>{$Title}</h2>";
-                                    echo "<p>{$Content}</p>";
+                                    echo "
+                                    <li class='timeline-inverted'>
+                        <div class='timeline-image'>
+
+                        </div>
+                        <div class='timeline-panel'>
+                            <div class='timeline-heading'>
+                            </div>
+                            <div class='timeline-body'>
+                                    <h2>{$Title}</h2>
+                                    <p>{$Content}</p>
+
+                                            </div>
+                        </div>
+                    </li>
+                                    ";
+
+
+
+
                                 }
 
                                 ?>

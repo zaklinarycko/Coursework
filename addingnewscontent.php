@@ -186,7 +186,7 @@
                 } else {
                     echo "Error: " . $sql . "<br>Error Message:" . mysqli_error($db);
                 }
-                header("news");
+                header("index.php");
             }
 //test
 } else {
