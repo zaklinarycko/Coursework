@@ -152,13 +152,13 @@
         </div>
         <div class="row">
 
-            <?php
+      //      <?php
             session_start();
-            if (isset($_SESSION['Username'])) //SESSION DOES EXIST
-            {
-                if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+      //      if (isset($_SESSION['Username'])) //SESSION DOES EXIST
+      //      {
+      //          if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                   //  include("scripts/header.php");
-                    ?>
+      //              ?>
 
             <main>
                 <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
