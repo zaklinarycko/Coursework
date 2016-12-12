@@ -145,8 +145,8 @@ session_start();
             include("dbconnect.php");
 
             //MYSQL INJECTION PROTECTION
-            //$username = mysqli_real_escape_string($username);
-            //$password = mysqli_real_escape_string($password);
+            //$ClubName = mysqli_real_escape_string($ClubName);
+            //$Description = mysqli_real_escape_string($Description);
 
             $sql_query = "SELECT * FROM clubs";
             $result = $db->query($sql_query);
@@ -247,6 +247,13 @@ session_start();
             </main>
 
             <?
+
+                    //MYSQL INJECTION PROTECTION
+                    //$ItemID = mysqli_real_escape_string($ItemID);
+                    //$Title = mysqli_real_escape_string($Title);
+                    //$Content = mysqli_real_escape_string($Content);
+                    //$AccessID = mysqli_real_escape_string($AccessID);
+                    //$PhotoID = mysqli_real_escape_string($PhotoID);
 
            // include("scripts/footer.php");
 

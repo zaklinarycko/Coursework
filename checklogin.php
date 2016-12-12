@@ -14,8 +14,8 @@ $password = $_POST["Password"];
 
 
 //MYSQL INJECTION PROTECTION
-$Username = mysqli_real_escape_string($Username);
-$Password = mysqli_real_escape_string($Password);
+$username = mysqli_real_escape_string($username);
+$password = mysqli_real_escape_string($password);
 
 //FIND THE USER IN THE DATABASE
 $sql="SELECT * FROM users WHERE Username='". $username ."' and Password='". $password . "'";
