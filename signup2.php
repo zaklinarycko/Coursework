@@ -4,12 +4,14 @@
 include ("dbconnect.php");
 
 //GETS THE USERNAME AND PASSWORD FROM PREVIOUS PAGE
-$username = $_POST["username"];
-$password = $_POST["password"];
-$passwordcheck = $_POST["passwordcheck"];
-$email = $_POST["email"];
+$Username = $_POST["Username"];
+$Password = $_POST["Password"];
+//$Passwordcheck = $_POST["Passwordcheck"];
+$Email = $_POST["Email"];
+$DisplayName = $_POST["DisplayName"];
+$AccessID = $_POST["AccessID"];
 
-if ($password==$passwordcheck)
+if ($Password==$Passwordcheck)
 {
 $sql = "INSERT INTO users (UserID, Username, Password, Email, DisplayName, AccessID) VALUES ('". $UserID ."', '" .$Username."', '".$Password."', '".$Email."', '".$DisplayName."', '".$AccessID."')";
 if (mysqli_query($db, $sql)) {

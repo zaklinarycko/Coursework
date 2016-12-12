@@ -181,7 +181,7 @@
                 $Content = $_POST["Content"];
                 $AccessID = $_SESSION['AccessID'];
                 $PhotoID = $_SESSION['PhotoID'];
-                $sql = "INSERT INTO health (ItemID, Title, Content, AccessID, PhotoID) VALUES (". $ItemID .", '" .$Title."', '".$Content."', ".$AccessID.", " .$PhotoID.")";
+                $sql = "INSERT INTO health (ItemID, Title, Content, AccessID, PhotoID) VALUES ('". $ItemID ."', '" .$Title."', '".$Content."',' ".$AccessID."', '" .$PhotoID."')";
                 if (mysqli_query($db, $sql)) {
                 } else {
                     echo "Error: " . $sql . "<br>Error Message:" . mysqli_error($db);
