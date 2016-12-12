@@ -2,7 +2,12 @@
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
+
+session_start();
+
 ?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -159,7 +164,7 @@ error_reporting(E_ALL);
         <div class="row">
 
            <?php
-            session_start();
+
             if (isset($_SESSION['Username'])) //SESSION DOES EXIST
             {
                 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
