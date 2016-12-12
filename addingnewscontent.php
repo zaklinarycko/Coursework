@@ -190,8 +190,8 @@ session_start();
                 $ItemID = str_replace(' ', '-', $_POST["Title"]);
                 $Title = $_POST["Title"];
                 $Content = $_POST["Content"];
-                $AccessID = $_SESSION['AccessID'];
-                $PhotoID = $_SESSION['PhotoID'];
+                $AccessID = $_SESSION["AccessID"];
+                $PhotoID = $_SESSION["PhotoID"];
                 $sql = "INSERT INTO health (ItemID, Title, Content, AccessID, PhotoID) VALUES ('". $ItemID ."', '" .$Title."', '".$Content."',' ".$AccessID."', '" .$PhotoID."')";
                 if (mysqli_query($db, $sql)) {
                 } else {
