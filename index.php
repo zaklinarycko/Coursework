@@ -127,6 +127,26 @@
                 <h3 class="section-subheading text-muted">Here you can view all the clubs available in the area.</h3>
 
             </div>
+
+            <div class="club">
+                <?
+                include("dbconnect.php");
+
+                $sql_query = "SELECT * FROM clubs";
+                $results = $db->query($sql_query);
+
+                while($row = $result->fetch_array())
+                {
+                    $ClubName = $row["ClubName"];
+                    $Description = $row["Description"];
+
+                    echo "
+                             <h1>{$ClubName}</h1>
+                            <p>{$Description}</p>
+    ";
+                }
+                ?>
+                </div>
         </div>
         <div class="row">
 
