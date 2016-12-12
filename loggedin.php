@@ -148,6 +148,9 @@
     ";
             }
             ?>
+
+            <button type="submit" class="btn btn-xl"> <a href="addingnewscontent.php#clubs">ADD</a></button>
+
         </div>
         </div>
     </div>

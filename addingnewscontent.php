@@ -172,7 +172,7 @@ session_start();
                         <script>tinymce.init({selector: 'textarea'});</script>
                         <form action="addingnewscontent.php" method="post">
                             <input type="text" name="ClubName" placeholder="ClubName">
-                            <textarea name="Genre"></textarea>
+                            <input type="text" name="Genre" placeholder="Genre">
                             <textarea name="Description"></textarea>
                             <button type="submit" class="btn btn-xl" name="commit" value="Submit"></button>
                         </form>
@@ -193,7 +193,7 @@ session_start();
                     $GenreID = $_SESSION["GenreID"];
                     $CalanderID = $_SESSION["CalanderID"];
 
-                    $sql = "INSERT INTO clubs (ClubID, ClubaName, Genre, Description, AccessID, PhotoID, GenreID, CalanderID) VALUES ('".$ClubID ."', '".$ClubName."', '".$Genre."', '".$Description."', '" .$AccessID."', '".$PhotoID."', '".$GenreID."', '".$CalanderID."')";
+                    $sql = "INSERT INTO clubs (ClubID, ClubName, Genre, Description, AccessID, PhotoID, GenreID, CalanderID) VALUES ('".$ClubID ."', '".$ClubName."', '".$Genre."', '".$Description."', '" .$AccessID."', '".$PhotoID."', '".$GenreID."', '".$CalanderID."')";
                     if (mysqli_query($db, $sql)) {
                     } else {
                         echo "Error: " . $sql . "<br>Error Message:" . mysqli_error($db);
