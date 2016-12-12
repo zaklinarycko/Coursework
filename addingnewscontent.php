@@ -180,7 +180,7 @@
                 $Title = $_POST["Title"];
                 $Content = $_POST["Content"];
                 $AccessID = $_SESSION['AccessID'];
-                $APhotoID = $_SESSION['PhotoID'];
+                $PhotoID = $_SESSION['PhotoID'];
                 $sql = "INSERT INTO health (ItemID, Title, Content, AccessID, PhotoID) VALUES (". $ItemID .", '" .$Title."', '".$Content."', ".$AccessID.", " .$PhotoID.")";
                 if (mysqli_query($db, $sql)) {
                 } else {
