@@ -296,7 +296,7 @@ session_start();
                 <p><input type="text" name="email" value="" placeholder="email"></p>
                 <p><input type="password" name="password" value="" placeholder="Password"></p>
                 <p><input type="password" name="passwordcheck" value="" placeholder="Confirm Password"></p>
-                <button type="submit" class="btn btn-xl" name="commit" value="Sign up"></button>
+                <button type="submit" class="btn btn-xl"> <a href="signup2.php">Submit</a></button>
             </form>
 
         </div>
