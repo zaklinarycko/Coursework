@@ -158,6 +158,54 @@ session_start();
     ";
             }
             ?>
+
+            <?php
+
+            if (isset($_SESSION['Username'])) //SESSION DOES EXIST
+            {
+                if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+                    //        include("scripts/header.php");
+                    ?>
+
+                    <main>
+                        <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+                        <script>tinymce.init({selector: 'textarea'});</script>
+                        <form action="addingnewscontent.php" method="post">
+                            <input type="text" name="ClubName" placeholder="ClubName">
+                            <textarea name="Genre"></textarea>
+                            <textarea name="Description"></textarea>
+                            <button type="submit" class="btn btn-xl" name="commit" value="Submit"></button>
+                        </form>
+                    </main>
+
+                    <?
+
+                    // include("scripts/footer.php");
+
+                } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                    include ('dbconnect.php');
+                    $ClubID = str_replace(' ', '-', $_POST["ClubName"]);
+                    $ClubName = $_POST["ClubName"];
+                    $Genre = $_POST["Genre"];
+                    $Description = $_POST["Description"];
+                    $AccessID = $_SESSION["AccessID"];
+                    $PhotoID = $_SESSION["PhotoID"];
+                    $GenreID = $_SESSION["GenreID"];
+                    $CalanderID = $_SESSION["CalanderID"];
+
+                    $sql = "INSERT INTO clubs (ClubID, ClubaName, Genre, Description, AccessID, PhotoID, GenreID, CalanderID) VALUES ('".$ClubID ."', '".$ClubName."', '".$Genre."', '".$Description."', '" .$AccessID."', '".$PhotoID."', '".$GenreID."', '".$CalanderID."')";
+                    if (mysqli_query($db, $sql)) {
+                    } else {
+                        echo "Error: " . $sql . "<br>Error Message:" . mysqli_error($db);
+                    }
+                    //      header("index.php");
+                }
+//test
+            } else {
+                //        header("location:index.php");
+            }
+
+            ?>
         </div>
 
     </div>
@@ -239,7 +287,7 @@ session_start();
 
             <?
 
-            session_start();
+
 
             include ("dbconnect.php");
             //Check to see if the 'username' session variable is set.
