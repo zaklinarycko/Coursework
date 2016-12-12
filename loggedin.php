@@ -269,6 +269,26 @@
   //              }
       //      }
 
+           include ("dbconnect.php");
+           //Check to see if the 'username' session variable is set.
+           if (isset($_SESSION['Username'])) //SESSION DOES EXIST
+           {
+               echo "<p>Hello " . $_SESSION['Username'] . "</p>";
+               $sql = "SELECT * FROM users WHERE Username='". $_SESSION['Username'] . "'";
+               $result = $db->query($sql);
+               while($row = $result->fetch_array())
+               {
+                   echo "<p>User type is " . $row['Username'] . "</p>";
+               }
+               ?>
+               <button type="submit" class="btn btn-xl"> <a href="logout.php">Logout</a></button>
+               <?
+           }
+
+           else //SESSION DOESNT EXIST
+           {
+
+
             ?>
 
             <button type="submit" class="btn btn-xl"> <a href="logout.php">Logout</a></button>
