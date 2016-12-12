@@ -166,7 +166,7 @@
                 <form action="addingnewscontent.php" method="post">
                     <input type="text" name="articleName" placeholder="Article Name">
                     <textarea name="articleText"></textarea>
-                    <input type="submit">
+                    <button type="submit" class="btn btn-xl" name="commit" value="Submit"></button>
                 </form>
             </main>
 
