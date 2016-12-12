@@ -249,11 +249,11 @@ session_start();
             <?
 
                     //MYSQL INJECTION PROTECTION
-                    //$ItemID = mysqli_real_escape_string($ItemID);
-                    //$Title = mysqli_real_escape_string($Title);
-                    //$Content = mysqli_real_escape_string($Content);
-                    //$AccessID = mysqli_real_escape_string($AccessID);
-                    //$PhotoID = mysqli_real_escape_string($PhotoID);
+                    $ItemID = mysqli_real_escape_string($ItemID);
+                    $Title = mysqli_real_escape_string($Title);
+                    $Content = mysqli_real_escape_string($Content);
+                    $AccessID = mysqli_real_escape_string($AccessID);
+                    $PhotoID = mysqli_real_escape_string($PhotoID);
 
            // include("scripts/footer.php");
 
