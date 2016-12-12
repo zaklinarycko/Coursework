@@ -176,7 +176,7 @@
 
             } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 include ('dbconnect.php');
-                $ItemID = str_replace(' ', '-', $_POST["ItemID"]);
+                $ItemID = str_replace(' ', '-', $_POST["Title"]);
                 $Title = $_POST["Title"];
                 $Content = $_POST["Content"];
                 $AccessID = $_SESSION['AccessID'];
