@@ -163,7 +163,7 @@ error_reporting(E_ALL);
             if (isset($_SESSION['Username'])) //SESSION DOES EXIST
             {
                 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-                    include("scripts/header.php");
+            //        include("scripts/header.php");
                     ?>
 
             <main>
@@ -192,11 +192,11 @@ error_reporting(E_ALL);
                 } else {
                     echo "Error: " . $sql . "<br>Error Message:" . mysqli_error($db);
                 }
-                header("index.php");
+          //      header("index.php");
             }
 //test
 } else {
-                header("location:index.php");
+        //        header("location:index.php");
             }
 
 ?>
