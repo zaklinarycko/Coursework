@@ -151,8 +151,8 @@ session_start();
                     $Description = $row["Description"];
 
                     echo "
-                             <h1>{$ClubName}</h1>
-                            <p>{$Description}</p>
+                            <h2 class='section-heading'>{$ClubName}</h2>
+                            <p class='text-muted'>{$Description}</p>
     ";
                 }
                 ?>
@@ -221,8 +221,8 @@ session_start();
                             <div class='timeline-heading'>
                             </div>
                             <div class='timeline-body'>
-                                    <h2>{ lets try $Title}</h2>
-                                    <p>{$Content}</p>
+                                    <h2 class='section-heading'>{$Title}</h2>
+                                    <p class='text-muted'>{$Content}</p>
 
                                             </div>
                         </div>
