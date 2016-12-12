@@ -152,6 +152,14 @@
         </div>
         <div class="row">
 
+            <?php
+            session_start();
+            if (isset($_SESSION['Username'])) //SESSION DOES EXIST
+            {
+                if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+                  //  include("scripts/header.php");
+                    ?>
+
             <main>
                 <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
                 <script>tinymce.init({selector: 'textarea'});</script>
@@ -161,6 +169,31 @@
                     <input type="submit">
                 </form>
             </main>
+
+            <?
+
+            include("scripts/footer.php");
+
+            } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            //    include ('scripts/dbconnect.php');
+                $ItemID = str_replace(' ', '-', $_POST["ItemID"]);
+                $Title = $_POST["Title"];
+                $Content = $_POST["Content"];
+                $AccessID = $_SESSION['AccessID'];
+                $APhotoID = $_SESSION['PhotoID'];
+                $sql = "INSERT INTO health (ItemID, Title, Content, AccessID, PhotoID) VALUES ('". $ItemID ."', '" .$Title."', '".$Content."', '".$AccessID."', '" .$PhotoID."')";
+                if (mysqli_query($db, $sql)) {
+                } else {
+                    echo "Error: " . $sql . "<br>Error Message:" . mysqli_error($db);
+                }
+                header("news");
+            }
+//test
+} else {
+                header("location:index.php");
+            }
+
+?>
 
             <div class="fb-page" data-href="https://www.facebook.com/Sportlethen/?fref=ts" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Sportlethen/?fref=ts" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Sportlethen/?fref=ts">Sportlethen CSH</a></blockquote></div>
 
