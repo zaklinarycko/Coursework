@@ -144,6 +144,10 @@ session_start();
 
             include("dbconnect.php");
 
+            //MYSQL INJECTION PROTECTION
+            //$username = mysqli_real_escape_string($username);
+            //$password = mysqli_real_escape_string($password);
+
             $sql_query = "SELECT * FROM clubs";
             $result = $db->query($sql_query);
 
@@ -182,7 +186,8 @@ session_start();
 
                     // include("scripts/footer.php");
 
-                } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                }
+                elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     include ('dbconnect.php');
                     $ClubID = str_replace(' ', '-', $_POST["ClubName"]);
                     $ClubName = $_POST["ClubName"];
