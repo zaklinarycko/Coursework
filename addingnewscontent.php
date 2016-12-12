@@ -152,14 +152,15 @@
         </div>
         <div class="row">
 
-            <form action="addpost.php" method="post">
-                ItemID:<input type="text" name="ItemID"><br>
-                Title:<input type="text" name="Title"><br>
-                Content:<input type="text" name="Content"><br>
-                AccessID:<input type="text" name="AccessID"><br>
-                PhotoID:<input type="text" name="PhotoID"><br>
-                <button type="submit" class="btn btn-xl" name="commit" value="Submit"></button>
-            </form>
+            <main>
+                <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+                <script>tinymce.init({selector: 'textarea'});</script>
+                <form action="addpost.php" method="post">
+                    <input type="text" name="articleName" placeholder="Article Name">
+                    <textarea name="articleText"></textarea>
+                    <input type="submit">
+                </form>
+            </main>
 
             <div class="fb-page" data-href="https://www.facebook.com/Sportlethen/?fref=ts" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Sportlethen/?fref=ts" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Sportlethen/?fref=ts">Sportlethen CSH</a></blockquote></div>
 
