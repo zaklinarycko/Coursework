@@ -203,13 +203,22 @@
                                 $result = $db->query($sql_query);
 
                                 // print out fields from row of data
+                                $timelineCheck = 1;
                                 while($row = $result->fetch_array()){
 
                                     $Title = $row['Title'];
                                     $Content = $row['Content'];
 
-                                    echo "
-                                    <li class='timeline-inverted'>
+                                    if ($timelineCheck==1){
+                                        $timelineCheck = 0;
+                                        echo "<li class='timeline'>";
+                                    }
+                                   else{
+                                       $timelineCheck=1;
+                                       echo"<li class='timeline-inverted'>";
+                                   }
+
+                                echo"
                         <div class='timeline-image'>
 
                         </div>
